@@ -1,3 +1,10 @@
-h1{
-    color: red;
+@font-face {
+  font-family: 'NorseBold';
+  src: url('font/Norsebold.otf') format('opentype');
+}
+
+html {
+  
+  margin: 0;
+  font-family: "NorseBold", "Roboto Condensed", sans-serif;
 }

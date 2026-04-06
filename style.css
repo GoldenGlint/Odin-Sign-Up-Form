@@ -3,11 +3,26 @@
   src: url('font/Norsebold.otf') format('opentype');
 }
 
+h2, legend {
+  font-family: 'Cinzel', serif;
+}
+h1{
+    font-size: 1.5rem;
+    font-family: 'Cinzel', serif;
+}
+
+body, input, label {
+  font-family: 'Lato', sans-serif;
+}
+
 :root{
     --green-color:#596D48;
     --light-border:#E5E7EB;
     --red-border: rgb(139, 0, 0);
     --blue-border: rgb(42, 42, 228);
+    --transparent-color: rgb(65, 65, 65);
+    --dark-white: #f0efef;
+    --marble-white: #ffffff;
 }
 
 .container{
@@ -47,7 +62,7 @@ Sidebar
     position: absolute;
     top:10vw;
     left: 0;
-    background-color: rgb(65, 65, 65);
+    background-color: var(--transparent-color);
     max-width: 100%;
     height: 10vw;
     opacity: 0.4;
@@ -70,18 +85,91 @@ Sidebar
 }
 
 .odin-text{
-    font-size: 10rem;
+    font-size: 8rem;
     font-family: 'NorseBold';
     color: white;
     align-self: center;
     
 }
 
-
-
 .credit{
     position: absolute;
     bottom: min(10px, 1rem);
     color: white;
+    font-weight: 300;
 }
+
+/*
+Form Part
+*/
+
+.page{
+    background-color: var(--dark-white);
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    font-size: 6rem;
+    padding-top: 10vh;
+
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+/* 
+Form Itself
+*/
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+   
+}
+
+
+legend {
+  width: 100%;       /* takes its own row */
+  font-size: 2rem;
+  margin-bottom: 0.5vh; /* space between legend and fields */
+  margin-top: 2vh;
+  padding-top: 10vh;
+}
+
+fieldset {
+  border: none;
+  background-color: var(--marble-white);
+  padding-top: 3vh;
+  padding-bottom: 4vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5); 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vh 4vw;
+
+}
+
+
+.question{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+
+.footer{
+    padding-top: 3vh;
+    padding-left: 3vw;
+}
+button{
+    padding: 10px;
+    background-color: var(--green-color);
+}
+
 

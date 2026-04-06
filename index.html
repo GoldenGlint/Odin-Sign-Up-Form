@@ -32,37 +32,37 @@
                 
             </div>
             <div class="form">
-                <form action="" method="POST">
+                <form action="https://httpbin.org/post" method="POST">
                     <fieldset>
                     <legend>Let's do this!</legend>
                         <div class="question">
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" id="first-name">
+                        <input type="text" id="first-name" placeholder="LeBron" name="first-name" required>
                         </div>                    
                         
                         <div class="question">
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" id="last-name">
+                        <input type="text" id="last-name" placeholder="James" name="last-name" required>
                         </div>
 
                         <div class="question">
                         <label for="email">EMAIL</label>
-                        <input type="email" id="email">
+                        <input type="email" id="email" placeholder="bob123@gmail.com" name="email" required>
                         </div>
 
                         <div class="question">
                         <label for="pn" >PHONE NUMBER</label>
-                        <input type="\d{3}[-]?\d{3}[-]?\d{4}" id="pn">
+                        <input type="text" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" id="pn" placeholder="123-456-7890" name="pn" required>
                         </div>
 
                         <div class="question">
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password">
+                        <input type="password" id="password" placeholder="Add Password" name="password" required>
                         </div>
 
                         <div class="question">
                         <label for="cpassword">CONFIRM PASSWORD</label>
-                        <input type="password" id="cpassword">
+                        <input type="password" id="cpassword" placeholder="Confirm Password" name="confirm-password" required>
                         </div>
                     </fieldset>
                     <div class="footer">

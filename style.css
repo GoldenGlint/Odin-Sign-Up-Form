@@ -3,8 +3,32 @@
   src: url('font/Norsebold.otf') format('opentype');
 }
 
-html {
-  
-  margin: 0;
-  font-family: "NorseBold", "Roboto Condensed", sans-serif;
+.container{
+    display: flex;
+}
+
+.sidebar{
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.plant{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.transparent{
+    position: absolute;
+    top:0;
+    left: 0;
 }

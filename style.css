@@ -3,12 +3,10 @@
   src: url('font/Norsebold.otf') format('opentype');
 }
 
-h2, legend {
-  font-family: 'Cinzel', serif;
-}
+
 h1{
     font-size: 1.5rem;
-    font-family: 'Cinzel', serif;
+    
 }
 
 body, input, label {
@@ -104,6 +102,7 @@ Form Part
 */
 
 .page{
+    font-family: 'Roboto', sans-serif;
     background-color: var(--dark-white);
     width: 60vw;
     display: flex;
@@ -159,9 +158,25 @@ fieldset {
 .question{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 30%; 
+    gap: 10px 0px;
 }
 
+label{
+    font-size: 0.8rem;
+    color: var(--transparent-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+}
+
+input{
+    background-color: var(--dark-white);
+    border: 3px solid var(--light-border);
+    outline: none;
+    border-radius: 5px; 
+    height: min(25px, 1.5rem);  
+
+}
 
 .footer{
     padding-top: 3vh;
